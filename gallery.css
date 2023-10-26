@@ -7,35 +7,63 @@ body {
 
 /* 4. Style the product gallery using flexbox. */
 .product-gallery {
-
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 /* 5. Style the div with the class "product-card" using the box model. */
 /* 6. Add a solid border with any color you like. */
 /* 7. Add background color of white. */
-____ {
+.product-card {
+    max-width: 200px;
+    display: box;
+    background-color: #fff;
+    margin: 5px;
+    padding: 15px;
+    border: 5px;
+    border-style: solid;
+    border-color: #43bad3;
+}
 
+.on-sale {
+    background-color: #43bad3;
+}
+
+.on-sale::before {
+    align-content: flex-start;
+    content: url('https://www.copydirect.co.nz/site/copydirectltd/images/Sale%20Signs/3-x-Sales-Posters-A2V1-200px.png');
+    display: inline-flex;
+    width: 200px;
+}
+
+.product-card:hover{
+    border-color: #f762a2;
 }
 
 .product-image {
-    max-width: 100%;
+    max-width: 200px;
     display: block;
     margin: 0 auto 10px;
 }
 
 .product-name {
+    max-width: 200px;
     color: #333;
     margin-bottom: 10px;
 }
 
 .product-desc {
+    max-width: 200px;
     color: #666;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
 .product-price {
-    color: #e74c3c;
+    max-width: 200px;
+    color: #7962ff;
     font-weight: bold;
 }
 
